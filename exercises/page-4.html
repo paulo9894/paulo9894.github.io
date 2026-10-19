@@ -7,11 +7,25 @@
 
     <title>Vincent van Gogh</title>
 
-    <meta name="description" content="The Dutch post-impressionist whose works are characterised by bold colours and dramatic, impulsive and expressive brushwork.">
+    <meta name="description"
+        content="The Dutch post-impressionist whose works are characterised by bold colours and dramatic, impulsive and expressive brushwork.">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <style type="text/tailwindcss">
+
+        a {
+            @apply text-blue-700
+       underline
+       decoration-2
+       decoration-blue-700
+       underline-offset-4
+       hover:text-red-700
+       hover:decoration-red-700
+       focus:text-red-700
+       focus:decoration-red-700
+       transition-colors duration-300;
+        }
 
         header {
             @apply flex flex-col justify-around items-center w-full mx-auto
@@ -61,6 +75,8 @@
 <body>
 
     <header>
+        <p>Student Name: Paulo Guilherme Freire Felix</p>
+        <p>Student ID: 82926</p>
 
         <h1>Vincent van Gogh</h1>
 
@@ -92,6 +108,14 @@
                 alt="Bedroom in Arles, van Gogh">
 
             <p>
+                <b>On view</b>:
+                <a href="https://www.vangoghmuseum.nl/en/collection/s0047V1962"
+                   target="_blank">
+                    Vincent van Gogh Museum, Amsterdam
+                </a>
+            </p>
+
+            <p>
                 In Arles, the painter began a friendship with the owners of a local hotel,
                 known as the Cafe de la Gare. The building inspired two more famous creations.
                 The first of which is known as <i>The Yellow House</i>.
@@ -99,6 +123,14 @@
 
             <img src="assets/img/yellow-house-van-gogh.jpg"
                 alt="The Yellow House, van Gogh">
+
+            <p>
+                <b>On view</b>:
+                <a href="https://www.vangoghmuseum.nl/en/collection/s0032V1962"
+                   target="_blank">
+                    Vincent van Gogh Museum, Amsterdam
+                </a>
+            </p>
 
             <p>
                 The second painting is one of many people's favourites:
@@ -109,6 +141,13 @@
             <img src="assets/img/cafe-terrace-at-night-van-gogh.jpg"
                 alt="The Cafe Terrace at Night, van Gogh">
 
+            <p>
+                <b>On view</b>:
+                <a href="https://krollermuller.nl/en/vincent-van-gogh-terrace-of-a-cafe-at-night"
+                   target="_blank">
+                    Kröller-Müller Museum, Otterlo
+                </a>
+            </p>
 
             <h3>Life, Suffering and Death</h3>
 
@@ -121,6 +160,14 @@
 
             <img src="assets/img/starry-night-van-gogh.jpg"
                 alt="Starry Night, van Gogh">
+
+            <p>
+                <b>On view</b>:
+                <a href="https://www.moma.org/collection/works/79802"
+                   target="_blank">
+                    The Museum of Modern Art, New York
+                </a>
+            </p>
 
             <p>
                 Van Gogh suffered from mental illness all his life.
