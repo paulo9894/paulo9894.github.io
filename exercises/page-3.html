@@ -14,24 +14,65 @@
 
     <style type="text/tailwindcss">
 
+        body {
+            @apply font-serif bg-blue-50;
+        }
+
         header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply pt-8 px-[9%] pb-[20px] md:pt-[3%] md:px-[20%] md:pb-[20px];
+        }
+
+        header p {
+            @apply text-sm mb-1;
+        }
+
+        header h1 {
+            @apply mt-2 text-6xl md:text-9xl mb-10 text-blue-900;
+        }
+
+        header h2 {
+            @apply text-3xl md:text-5xl text-blue-700;
         }
 
         section {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply pt-4 px-[9%] pb-[42px] md:px-[20%];
         }
 
-        h1 {
-            @apply mb-6;
+        section h2 {
+            @apply mt-8 mb-2 text-2xl md:text-4xl text-blue-800;
         }
 
-        h2 {
-            @apply mt-8 mb-3;
+        section p {
+            @apply mb-4 text-lg md:text-2xl text-gray-900;
         }
 
-        p {
-            @apply mb-5;
+        a {
+            @apply text-blue-700;
+        }
+
+        .section-1 {
+            @apply bg-yellow-200;
+        }
+
+        .section-2 {
+            @apply bg-green-200;
+        }
+
+        .section-3 {
+            @apply bg-orange-200;
+        }
+
+        .section-4 {
+            @apply bg-sky-950;
+        }
+
+        .section-5 {
+            @apply bg-rose-200;
+        }
+
+        .section-4 h2,
+        .section-4 p {
+            @apply text-white;
         }
 
     </style>
@@ -55,7 +96,7 @@
     <!-- Main content of web page in sections -->
     <main>
 
-        <section>
+        <section class="section-1">
 
             <h2>Smaller Heading</h2>
 
@@ -75,7 +116,7 @@
 
         </section>
 
-        <section>
+        <section class="section-2">
 
             <h2>Smaller Heading</h2>
 
@@ -95,7 +136,7 @@
 
         </section>
 
-        <section>
+        <section class="section-3">
 
             <h2>Smaller Heading</h2>
 
@@ -113,7 +154,7 @@
 
         </section>
 
-        <section>
+        <section class="section-4">
 
             <h2>Smaller Heading</h2>
 
@@ -131,7 +172,7 @@
 
         </section>
 
-        <section>
+        <section class="section-5">
 
             <h2>Smaller Heading</h2>
 
@@ -149,7 +190,7 @@
 
         </section>
 
-        <section>
+        <section class="section-1">
 
             <h2>Smaller Heading</h2>
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hero Block with Video</title>
+
+    <meta name="description"
+        content="A hero block with text displayed over a background video.">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+
+        header {
+            @apply min-h-[60vh] md:min-h-[80vh]
+                   flex flex-col justify-center
+                   px-8 lg:px-60 py-12
+                   text-center
+                   relative overflow-hidden;
+        }
+
+        header video {
+            @apply absolute inset-0
+                   w-full h-full
+                   object-cover;
+        }
+
+        header::before {
+            content: "";
+            @apply absolute inset-0
+                   bg-black/40
+                   z-10;
+        }
+
+        header h1 {
+            @apply text-7xl md:text-8xl
+                   text-white font-bold
+                   tracking-tight
+                   mb-6
+                   relative z-20;
+        }
+
+        header h2 {
+            @apply text-4xl md:text-5xl
+                   text-white
+                   relative z-20;
+        }
+
+        header p {
+            @apply text-white
+                   relative z-20;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <header>
+
+        <video autoplay muted loop playsinline>
+            <source src="video/2086113-hd_1920_1080_30fps.mp4"
+                    type="video/mp4">
+        </video>
+
+        <p>Student Name: Paulo Guilherme Freire Felix</p>
+        <p>Student ID: 82926</p>
+
+        <h1>Education for Life</h1>
+
+        <h2>Learning today. Leading tomorrow.</h2>
+
+    </header>
+
+</body>
+
+</html>

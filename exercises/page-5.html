@@ -15,6 +15,13 @@
 
     <style type="text/tailwindcss">
 
+        a {
+            @apply text-green-800
+                hover:text-green-600
+                focus:text-green-600
+                transition-colors duration-300;
+        }
+
         header {
             @apply flex flex-col justify-around items-center w-full mx-auto
             bg-green-300
@@ -36,6 +43,10 @@
 
         header p {
             @apply text-green-900 text-2xl md:text-3xl/12 text-center font-normal;
+        }
+
+        .student-info {
+            @apply text-sm mb-1;
         }
 
         section {
@@ -75,8 +86,9 @@
 <body id="top-of-page">
 
     <header>
-        <p>Student Name: Paulo Guilherme Freire Felix</p>
-        <p>Student ID: 82926</p>
+
+        <p class="student-info">Student Name: Paulo Guilherme Freire Felix</p>
+        <p class="student-info">Student ID: 82926</p>
 
         <h1>Ireland's Top Five Visitor Attractions</h1>
 
@@ -133,7 +145,6 @@
                 Annual Number of Visitors: <b>1,711,281</b>
             </p>
 
-
             <h2 id="cliffs-of-moher">Cliffs of Moher, Co. Clare</h2>
 
             <img src="assets/img/cliffs-of-moher.jpg"
@@ -157,7 +168,6 @@
             <p class="highlight-text">
                 Annual Number of Visitors: <b>1,527,000</b>
             </p>
-
 
             <h2 id="dublin-zoo">Dublin Zoo</h2>
 
@@ -183,7 +193,6 @@
                 Annual Number of Visitors: <b>1,264,300</b>
             </p>
 
-
             <h2 id="aquatic-centre">National Aquatic Centre, Dublin</h2>
 
             <img src="assets/img/national-aquatic-centre.jpg"
@@ -205,7 +214,6 @@
             <p class="highlight-text">
                 Annual Number of Visitors: <b>1,099,756</b>
             </p>
-
 
             <h2 id="kells-tcd">Book of Kells Exhibition, Trinity College, Dublin</h2>
 

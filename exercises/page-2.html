@@ -14,24 +14,36 @@
 
     <style type="text/tailwindcss">
 
+        body {
+            @apply bg-purple-900 text-white;
+        }
+
         header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply pt-8 px-[9%] pb-[20px] md:pt-[3%] md:px-[20%] md:pb-[20px];
         }
 
         section {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+            @apply pt-4 px-[9%] pb-[42px] md:px-[20%];
         }
 
-        h1 {
-            @apply mb-6;
+        header p {
+            @apply text-sm mb-1;
         }
 
-        h2 {
-            @apply mt-8 mb-3;
+        header h1 {
+            @apply mt-2 mb-0 text-6xl md:text-8xl font-serif font-bold text-purple-100;
         }
 
-        p {
-            @apply mb-5;
+        section h2 {
+            @apply mt-8 text-3xl md:text-4xl font-serif font-bold text-purple-100;
+        }
+
+        section p {
+            @apply mb-4 text-base md:text-lg text-white;
+        }
+
+        a {
+            @apply text-purple-200;
         }
 
     </style>
@@ -53,7 +65,7 @@
 
         <section>
 
-            <h1>Introduction</h1>
+            <h2>Introduction</h2>
 
             <p>
                 <i>Purple Rain</i> is a song by American musician Prince and his backing band The Revolution.

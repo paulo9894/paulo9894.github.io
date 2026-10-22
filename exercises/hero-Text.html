@@ -9,7 +9,11 @@
     <title>Hero Block with Text</title>
 
     <meta name="description"
-        content="An above-the-fold hero block with animated text and various background colours.">
+        content="An above-the-fold hero block with animated text and a background image.">
+
+    <link rel="preload"
+          href="assets/img/pexels-august-de-richelieu-4427819.jpg"
+          as="image">
 
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -17,22 +21,38 @@
 
         header {
             @apply min-h-[60vh] md:min-h-[80vh]
-                   bg-linear-to-b from-purple-600 to-purple-900
+                   bg-[url('assets/img/pexels-august-de-richelieu-4427819.jpg')]
+                   bg-cover bg-center
                    flex flex-col justify-center
                    px-8 lg:px-60 py-12
-                   text-center;
+                   text-center
+                   relative;
+        }
+
+        header::before {
+            content: "";
+            @apply absolute inset-0 bg-black/40;
         }
 
         header h1 {
             @apply text-7xl md:text-8xl
                    text-white font-bold
                    tracking-tight
-                   mb-6;
+                   mb-6
+                   relative z-10
+                   [text-shadow:2px_2px_4px_#000];
         }
 
         header h2 {
             @apply text-4xl md:text-5xl
-                   text-white;
+                   text-white
+                   relative z-10
+                   [text-shadow:2px_2px_4px_#000];
+        }
+
+        header p {
+            @apply text-white
+                   relative z-10;
         }
 
         .slide-in-top {
@@ -75,6 +95,7 @@
 
     <!-- hero block -->
     <header>
+
         <p>Student Name: Paulo Guilherme Freire Felix</p>
         <p>Student ID: 82926</p>
 

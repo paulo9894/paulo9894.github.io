@@ -14,6 +14,10 @@
 
     <style type="text/tailwindcss">
 
+        body {
+            @apply bg-orange-50;
+        }
+
         header {
             @apply pt-8 px-[9%] pb-[20px] md:pt-[3%] md:px-[20%] md:pb-[20px];
         }
@@ -27,19 +31,19 @@
         }
 
         header h1 {
-            @apply mt-2 mb-0;
+            @apply mt-2 mb-0 text-6xl md:text-8xl font-serif font-bold text-red-800;
         }
 
         section h2 {
-            @apply mt-8;
+            @apply mt-8 text-3xl md:text-4xl font-serif font-bold text-red-700;
         }
 
         section h3 {
-            @apply mt-6;
+            @apply mt-6 text-2xl md:text-3xl font-serif font-bold text-red-700;
         }
 
         section p {
-            @apply mb-4;
+            @apply mb-4 text-base md:text-lg text-gray-900;
         }
 
     </style>
