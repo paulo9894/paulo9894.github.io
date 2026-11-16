@@ -1,51 +1,319 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary Smith | Portfolio | Sample Hero Block Layout 5</title>
+
+    <!-- Paulo Guilherme Freire Felix 82926 -->
+
+    <title>Paulo Guilherme Freire Felix | Portfolio | Sample Hero Block Layout 5</title>
+
     <meta name="description" content="Gallery of hero block layouts.">
 
-    <!-- Preload the hero image so it appears as soon as possible -->
-    <link rel="preload" as="image" href="https://lunevedy.com/v2/assets/img/hero-image.jpg">
+    <!-- Preload hero image -->
+    <link rel="preload" as="image" href="assets/img/ui-designer.jpg">
 
-   <!-- Tailwind CSS -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Zilla+Slab:wght@400&display=swap"
+          rel="stylesheet">
 
     <style type="text/tailwindcss">
 
-        /* Paste CSS styles here */
+        body {
+            margin: 0;
+        }
 
+        .hero {
+            width: 100%;
+            min-height: 520px;
+            background-color: #000;
+        }
+
+        .hero-split-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 520px;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 55px 70px;
+            background-color: #000;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            width: fit-content;
+
+            margin-bottom: 30px;
+
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            color: white;
+
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 7px;
+            text-decoration-color: #4ade80;
+            text-decoration-style: wavy;
+        }
+
+        .hero h1 {
+            margin: 0;
+
+            font-family: 'Barlow Condensed', sans-serif;
+            font-size: 58px;
+            line-height: 1;
+
+            font-weight: 600;
+            letter-spacing: 4px;
+
+            color: #4ade80;
+        }
+
+        .hero h2 {
+            max-width: 430px;
+
+            margin-top: 26px;
+
+            font-family: 'Zilla Slab', serif;
+            font-size: 22px;
+            line-height: 1.45;
+            font-weight: 400;
+
+            color: white;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 22px;
+
+            margin-top: 40px;
+        }
+
+        .hero-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+
+            padding: 11px 22px;
+
+            border-radius: 8px;
+
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+
+            text-decoration: none;
+        }
+
+        .button-recent {
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+        }
+
+        .button-hire {
+            border: 1px solid #5ee9a8;
+            background-color: #5ee9a8;
+            color: black;
+        }
+
+        .hero-button-icon {
+            width: 18px;
+            height: 18px;
+        }
+
+        .hero-split-media {
+            position: relative;
+            min-height: 520px;
+            overflow: hidden;
+        }
+
+        .hero-split-image {
+            position: absolute;
+            inset: 0;
+
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+
+        @media (max-width: 800px) {
+
+            .hero-split-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-content {
+                padding: 50px 30px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .hero-split-media {
+                min-height: 400px;
+            }
+        }
 
     </style>
 
-
-	<!-- Google Fonts -->
-
-
-
 </head>
-
-
 
 <body>
 
-        <!-- PASTE the hero block HTML under here -->
+    <!-- Hero Block 5 -->
 
-		
-        <!-- =============== Do not remove anything below this line ================= -->
+    <header class="hero">
 
-	<main>
-			<section class="w-full px-6 py-16 md:px-12 md:py-24 text-center">
-				<p class="text-xl"><a href="index-1.html" class="text-blue-800 underline underline-offset-6">Hero Block 1</a> | 
-				<a href="index-2.html" class="text-blue-800 underline underline-offset-6">Hero Block 2</a> | 
-				<a href="index-3.html" class="text-blue-800 underline underline-offset-6">Hero Block 3</a> | 
-				<a href="index-4.html" class="text-blue-800 underline underline-offset-6">Hero Block 4</a> | 
-				Hero Block 5</p>
-		</section>
+        <div class="hero-split-grid">
 
-	</main>
+            <div class="hero-content">
+
+                <p class="hero-badge">
+                    PAULO GUILHERME
+                </p>
+
+                <h1>
+                    UI DESIGNER
+                </h1>
+
+                <h2>
+                    Creating human-friendly interfaces for
+                    mobile and web apps.
+                </h2>
+
+                <div class="hero-buttons">
+
+                    <a href="#" class="hero-button button-recent">
+
+                        <svg class="hero-button-icon"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             aria-hidden="true">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M3 7h5l2 2h11v10H3V7z">
+                            </path>
+
+                        </svg>
+
+                        Recent work
+
+                    </a>
+
+
+                    <a href="#" class="hero-button button-hire">
+
+                        <svg class="hero-button-icon"
+                             xmlns="http://www.w3.org/2000/svg"
+                             viewBox="0 0 24 24"
+                             fill="none"
+                             stroke="currentColor"
+                             stroke-width="2"
+                             aria-hidden="true">
+
+                            <path stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M4 6h16v12H4V6zm0 1l8 6 8-6">
+                            </path>
+
+                        </svg>
+
+                        Hire me
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-split-media">
+
+                <img
+                    class="hero-split-image"
+                    src="assets/img/ui-designer.jpg"
+                    alt="UI designer working at a desk"
+                    width="1200"
+                    height="900"
+                    fetchpriority="high">
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- Do not remove anything below this line -->
+
+    <main>
+
+        <section class="w-full px-6 py-16 md:px-12 md:py-24 text-center">
+
+            <p class="text-xl">
+
+                <a href="index-1.html"
+                   class="text-blue-800 underline underline-offset-6">
+                    Hero Block 1
+                </a>
+
+                |
+
+                <a href="index-2.html"
+                   class="text-blue-800 underline underline-offset-6">
+                    Hero Block 2
+                </a>
+
+                |
+
+                <a href="index-3.html"
+                   class="text-blue-800 underline underline-offset-6">
+                    Hero Block 3
+                </a>
+
+                |
+
+                <a href="index-4.html"
+                   class="text-blue-800 underline underline-offset-6">
+                    Hero Block 4
+                </a>
+
+                |
+
+                Hero Block 5
+
+            </p>
+
+        </section>
+
+    </main>
 
 </body>
+
 </html>
